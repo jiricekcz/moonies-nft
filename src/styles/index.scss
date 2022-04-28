@@ -1,0 +1,421 @@
+.roadmap {
+  line-height: 1.4em;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: inherit;
+  }
+}
+
+.roadmap-item {
+  padding-left: 40px;
+  position: relative;
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &:hover {
+    .roadmap-planet {
+      filter: brightness(1.15) contrast(1.15);
+    }
+  }
+}
+
+.roadmap-title {
+  color: var(--primary) !important;
+  font-weight: 600;
+  min-height: 50px;
+}
+
+.roadmap-marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+  transition: 0.5s ease;
+
+  &:before {
+    background: var(--primary);
+    border: 3px solid transparent;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 15px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 15px;
+    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  &:after {
+    content: "";
+    width: 3px;
+    background: linear-gradient(var(--primary), var(--secondary));
+    display: block;
+    position: absolute;
+    top: 24px;
+    bottom: 0;
+    left: 6px;
+  }
+
+  // .roadmap-item:last-child &:after {
+  //   content: none;
+  // }
+}
+
+.roadmap-content {
+  font-size: 19px;
+  padding-bottom: 40px;
+  color: var(--light);
+  line-height: 32px;
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.roadmap-centered {
+  @media (min-width: 992px) {
+    &,
+    .roadmap-item,
+    .roadmap-info,
+    .roadmap-marker,
+    .roadmap-content {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+
+    .roadmap-item {
+      padding-bottom: 50px;
+      overflow: hidden;
+    }
+
+    .roadmap-marker {
+      position: absolute;
+      left: 50%;
+      margin-left: -7.5px;
+    }
+
+    .roadmap-info,
+    .roadmap-content {
+      width: 50%;
+    }
+
+    > .roadmap-item:nth-child(odd) .roadmap-info {
+      float: left;
+      text-align: right;
+      padding-right: 30px;
+    }
+
+    > .roadmap-item:nth-child(odd) .roadmap-planet {
+      position: absolute;
+      margin-left: -130px;
+    }
+
+    > .roadmap-item:nth-child(odd) .roadmap-content {
+      float: right;
+      text-align: left;
+      padding-left: 30px;
+    }
+
+    > .roadmap-item:nth-child(even) .roadmap-info {
+      float: right;
+      text-align: left;
+      padding-left: 30px;
+    }
+
+    > .roadmap-item:nth-child(even) .roadmap-planet {
+      position: absolute;
+      margin-left: 40px;
+    }
+
+    > .roadmap-item:nth-child(even) .roadmap-content {
+      float: left;
+      text-align: right;
+      padding-right: 30px;
+    }
+
+    > .roadmap-item.period .roadmap-content {
+      float: none;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .roadmap-item.period {
+      padding: 50px 0 90px;
+    }
+
+    .period .roadmap-marker:after {
+      height: 30px;
+      bottom: 0;
+      top: auto;
+    }
+
+    .period .roadmap-title {
+      left: auto;
+    }
+  }
+}
+
+.profile-card {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  padding: 40px 30px 30px;
+  text-align: center;
+  transition: all 200ms ease;
+}
+
+.profile-card:hover header img {
+  transform: scale(1.075);
+}
+
+.profile-card header {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.profile-card header img {
+  border-radius: 50%;
+  width: 225px;
+  height: 225px;
+  object-fit: cover;
+  border: 5px solid var(--light);
+  transition: all 200ms ease;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.profile-card header h1 {
+  font-size: 28px;
+  color: var(--primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.profile-card header h2 {
+  font-size: 18px;
+  color: var(--light);
+  margin: 0;
+}
+
+.profile-card a {
+  font-size: 30px;
+  padding: 10px 16px;
+  background: var(--light);
+  border-radius: 50%;
+  -webkit-transition: all 1s cubic-bezier(0, 0.83, 0.17, 1);
+  -moz-transition: all 1s cubic-bezier(0, 0.83, 0.17, 1);
+  -o-transition: all 1s cubic-bezier(0, 0.83, 0.17, 1);
+  transition: all 1s cubic-bezier(0, 0.83, 0.17, 1);
+  transform-style: preserve-3d;
+}
+
+.profile-card a:hover {
+  cursor: pointer;
+  background: #08a0e9 !important;
+}
+
+.profile-card a:hover .social-icon {
+  color: var(--light) !important;
+}
+
+.profile-card .social-icon {
+  cursor: pointer;
+  color: #08a0e9 !important;
+  font-size: 30px;
+  -webkit-transition: all 1s cubic-bezier(0, 0.83, 0.17, 1);
+  -moz-transition: all 1s cubic-bezier(0, 0.83, 0.17, 1);
+  -o-transition: all 1s cubic-bezier(0, 0.83, 0.17, 1);
+  transition: all 1s cubic-bezier(0, 0.83, 0.17, 1);
+  transform-style: preserve-3d;
+}
+
+.footer-bar {
+  background-color: rgba(var(--secondary-rgb), 0.025);
+  padding: 40px 0px;
+}
+
+.footer-bar a {
+  text-decoration: none;
+  color: rgba(var(--light-rgb), 0.9);
+}
+
+.footer-bar .copyright {
+  color: rgba(var(--light-rgb), 0.6);
+}
+
+.footer-bar .footer-heading {
+  font-size: 36px;
+  color: var(--light);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.footer-bar .menu a {
+  color: rgba(var(--light-rgb), 0.9);
+  margin: 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.25s ease;
+}
+
+.footer-bar .menu a:hover {
+  color: rgba(var(--light-rgb), 0.5);
+}
+
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 25px;
+
+  &__button {
+    margin: 0px 10px 0;
+  }
+}
+
+$social-button-size: 55px;
+$social-button-icon-size: 0.4;
+$social-button-background: var(--light);
+$social-button-active-color: var(--light);
+$social-button-transition-time: 0.25s;
+
+$social-button-colors: (
+  "facebook": #3b5999,
+  "twitter": #55acee,
+  "discord": #8c9eff,
+  "instagram": #e4405f,
+);
+
+.social-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: $social-button-size;
+  height: $social-button-size;
+  text-decoration: none;
+  border-radius: 100%;
+  cursor: pointer;
+  background: var(--light);
+  border: 2px solid var(--light);
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    transition: $social-button-transition-time;
+  }
+
+  &:hover {
+    color: $social-button-active-color;
+
+    &::after {
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      margin-left: calc(-50% - 1px);
+    }
+  }
+
+  i,
+  svg {
+    cursor: pointer;
+    color: var(--dark);
+    position: relative;
+    z-index: 1;
+    transition: $social-button-transition-time;
+  }
+
+  i {
+    font-size: $social-button-size * $social-button-icon-size;
+  }
+
+  svg {
+    height: percentage($social-button-icon-size);
+    width: percentage($social-button-icon-size);
+  }
+
+  @each $name, $color in $social-button-colors {
+    &--#{$name} {
+      color: $color;
+
+      &::after {
+        background: $color;
+      }
+    }
+  }
+}
+
+@function generateStars($numberOfStars: 100) {
+  $value: "#{random(1920)}px #{random(12000)}px var(--light)";
+  @for $i from 2 through $numberOfStars {
+    $value: "#{$value}, #{random(1920)}px #{random(12000)}px var(--light)";
+  }
+  @return unquote($value);
+}
+
+.stars {
+  background: transparent;
+  border-radius: 50%;
+  &.stars-xxl {
+    width: 3px;
+    height: 3px;
+    box-shadow: generateStars(10);
+    animation: starMovement 360s linear infinite;
+  }
+  &.stars-xl {
+    width: 2px;
+    height: 2px;
+    box-shadow: generateStars(400);
+    animation: starMovement 120s linear infinite;
+  }
+  &.stars-l {
+    width: 1px;
+    height: 1px;
+    box-shadow: generateStars(1500);
+    animation: starMovement 60s linear infinite;
+  }
+  &.stars-flash {
+    width: 5px;
+    height: 5px;
+    box-shadow: generateStars(25);
+    animation: starMovement 5s linear infinite;
+  }
+}
+
+@keyframes starMovement {
+  from {
+    transform: translateY(-500px);
+  }
+  to {
+    transform: translateY(-6000px);
+  }
+}
+@keyframes moonMovement {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
