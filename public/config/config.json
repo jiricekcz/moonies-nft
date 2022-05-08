@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0x31C003bba54d8194866A25de08fAFbE808762766",
-  "SCAN_LINK": "https://mumbai.polygonscan.com/address/0x31c003bba54d8194866a25de08fafbe808762766",
+  "CONTRACT_ADDRESS": "0x987b13b013D7387D65a98D3364bca17570ac55b0",
+  "SCAN_LINK": "https://contract.mooniesnft.xyz/",
   "NETWORK": {
-    "NAME": "Polygon",
-    "SYMBOL": "MATIC",
-    "ID": 80001
+    "NAME": "Ethereum Rinkeby",
+    "SYMBOL": "ETH",
+    "ID": 4
   },
-  "NFT_NAME": "XoloMano",
-  "SYMBOL": "XLMN",
-  "MAX_SUPPLY": 10000,
-  "MAX_BUY_QUANTITY": 20,
-  "WEI_COST": 90000000000000000,
-  "DISPLAY_COST": 0.09,
+  "NFT_NAME": "Moonies",
+  "SYMBOL": "MOON",
+  "MAX_SUPPLY": 8888,
+  "MAX_BUY_QUANTITY": 8888,
+  "WEI_COST": 0.04e18,
+  "DISPLAY_COST": 0.04,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/XoloMano"
+  "MARKETPLACE_LINK": "https://opensea.mooniesnft.xyz/"
 }

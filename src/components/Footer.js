@@ -15,7 +15,7 @@ const Footer = () => {
 
             <div className="social-buttons">
               <motion.a
-                href="#"
+                href="https://opensea.mooniesnft.xyz"
                 rel="noreferrer"
                 target="_blank"
                 className="social-buttons__button social-button"

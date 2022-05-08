@@ -68,17 +68,20 @@ const Home = () => {
             <br />
             {width < 992 && <br />}
             <a href="" style={{ all: "unset" }}>
-              <button className="primary-btn" disabled={true}>
+              {/* <button className="primary-btn" disabled={false}>
                 MINT SOON!
-              </button>
+              </button> */}
             </a>
+            <form action="/mint">
+              <input type="submit"  class="primary-btn" value="Mint Now!" />
+            </form>
             {/* <button
               type="button"
               class="primary-btn"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModalCenter"
+              // data-bs-toggle="modal"
+              // data-bs-target="#exampleModalCenter"
             >
-              Mint Soon!
+              Mint Now!
             </button> */}
           </animated.div>
         </center>

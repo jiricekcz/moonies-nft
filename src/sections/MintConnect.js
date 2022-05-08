@@ -134,7 +134,7 @@ const MintConnect = () => {
     console.log(blockchain.account);
     console.log(totalCostWei);
     var gasAmount = blockchain.smartContract.methods
-      .mint(buyQuantity)
+      .mintMany(buyQuantity)
       .estimateGas({
         to: loadedConfig.CONTRACT_ADDRESS,
         from: blockchain.account,
@@ -150,7 +150,7 @@ const MintConnect = () => {
         });
 
         blockchain.smartContract.methods
-          .mint(buyQuantity)
+          .mintMany(buyQuantity)
           .send({
             to: loadedConfig.CONTRACT_ADDRESS,
             from: blockchain.account,
