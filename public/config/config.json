@@ -1,5 +1,5 @@
 {
-  "CONTRACT_ADDRESS": "0x987b13b013D7387D65a98D3364bca17570ac55b0",
+  "CONTRACT_ADDRESS": "0x7B76F53e9dDCeD4fEd6e1eFe018617E5C197b8c7",
   "SCAN_LINK": "https://contract.mooniesnft.xyz/",
   "NETWORK": {
     "NAME": "Ethereum Rinkeby",
@@ -10,8 +10,8 @@
   "SYMBOL": "MOON",
   "MAX_SUPPLY": 8888,
   "MAX_BUY_QUANTITY": 10,
-  "WEI_COST": 0.04e18,
-  "DISPLAY_COST": 0.04,
+  "WEI_COST": 0.035e18,
+  "DISPLAY_COST": 0.035,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.mooniesnft.xyz/"
