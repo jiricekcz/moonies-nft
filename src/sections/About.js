@@ -79,7 +79,7 @@ const About = () => {
               className="primary-p"
               style={{ width: "90%", textAlign: width > 992 && "left" }}
             >
-              Moonies is generative project consisting of 10,000 avatars, made
+              Moonies is generative project consisting of 8,888 avatars, made
               up from over <strong>600</strong> hand drawn traits - a lot of
               which never seen before in any other collection!
               <br />
@@ -88,7 +88,7 @@ const About = () => {
               give the Roadmap a good read to see exactly what these are.
               <br />
               <br />
-              Among the 10,000 will be ten unique 1/1 Moonies. These hold
+              Among the 8,888 will be ten unique 1/1 Moonies. These hold
               extremely special perks for those luckily enough to mint one.
               Details of which will only be revealed on launch day.
               <br />
