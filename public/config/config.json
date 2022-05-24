@@ -1,10 +1,10 @@
 {
-  "CONTRACT_ADDRESS": "0x74d0e5f68393c45344a955423D0A78115e6ca51a",
+  "CONTRACT_ADDRESS": "0x5dd29f0c56dec0c2532f5c9cf0b817fc1613ff74",
   "SCAN_LINK": "https://contract.mooniesnft.xyz/",
   "NETWORK": {
-    "NAME": "Ethereum Rinkeby",
+    "NAME": "Ethereum",
     "SYMBOL": "ETH",
-    "ID": 4
+    "ID": 1
   },
   "NFT_NAME": "Moonies",
   "SYMBOL": "MOON",
