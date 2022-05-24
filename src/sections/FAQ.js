@@ -37,7 +37,7 @@ const FAQ = () => {
         <div className="faq-container">
           <FAQCard
             title="What is the total supply?"
-            text="With over 500 traits, a total of 10,000 unique Moonies will be living on Ethereum blockchain."
+            text="With over 500 traits, a total of 8,888 unique Moonies will be living on Ethereum blockchain."
           />
           <FAQCard
             title="When is the launch?"
