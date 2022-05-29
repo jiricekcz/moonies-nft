@@ -1,5 +1,5 @@
 {
-  "CONTRACT_ADDRESS": "0x5dd29f0c56dec0c2532f5c9cf0b817fc1613ff74",
+  "CONTRACT_ADDRESS": "0x88A93A0389C8a8a331d261F8C8DAe7cEc36Be016",
   "SCAN_LINK": "https://contract.mooniesnft.xyz/",
   "NETWORK": {
     "NAME": "Ethereum",
@@ -10,8 +10,8 @@
   "SYMBOL": "MOON",
   "MAX_SUPPLY": 8888,
   "MAX_BUY_QUANTITY": 10,
-  "WEI_COST": 0.035e18,
-  "DISPLAY_COST": 0.035,
+  "WEI_COST": 0.0015e18,
+  "DISPLAY_COST": 0.001,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.mooniesnft.xyz/"

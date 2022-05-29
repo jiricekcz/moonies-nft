@@ -78,7 +78,7 @@ const MintConnect = () => {
   };
 
   useEffect(() => {
-    setBuyCost(Math.round(buyQuantity * loadedConfig.DISPLAY_COST * 100) / 100);
+    setBuyCost(Math.round(buyQuantity * loadedConfig.DISPLAY_COST * 1000) / 1000);
   }, [buyQuantity]);
 
   const handleConnect = (e) => {
