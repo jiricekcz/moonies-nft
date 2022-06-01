@@ -10,8 +10,8 @@
   "SYMBOL": "MOON",
   "MAX_SUPPLY": 8888,
   "MAX_BUY_QUANTITY": 10,
-  "WEI_COST": 0,
-  "DISPLAY_COST": 0,
+  "WEI_COST": 700000000000000,
+  "DISPLAY_COST": 0.0007,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.mooniesnft.xyz/"
